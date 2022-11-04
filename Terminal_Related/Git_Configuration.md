@@ -29,7 +29,7 @@ I'm a big fan of documentation so for assistance I will usually peer into offici
 Step 1. Make a hidden file for your token
 
 ```bash
-    touch ~/token.txt
+touch ~/token.txt
 ```
 
 Step 2. Make the GitHub credential store look at that file anytime it needs credentials
