@@ -48,6 +48,7 @@ Step 3. Install Nerd Font
 
 ### Custom Starship Terminal TOML File
 <details>
+    <summary>Treats underneath</summary>
 
     format = """
     [](#FF19B6)\
