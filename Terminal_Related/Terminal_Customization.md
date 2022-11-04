@@ -1,6 +1,6 @@
 <h1 style="color:#FF8C00">🎃 Terminal Customization</h1>
 
-![Testing](https://i.imgur.com/YRRZIh9.png)
+<img src="https://i.imgur.com/YRRZIh9.png" alt="Screenshot of customized terminal" height=600>
 
 ## Table of Contents
 [Installation Instructions](#installation-instructions)
@@ -48,6 +48,7 @@ Step 3. Install Nerd Font
 
 ### Custom Starship Terminal TOML File
 <details>
+    <summary>Treats underneath</summary>
 
     format = """
     [](#FF19B6)\
