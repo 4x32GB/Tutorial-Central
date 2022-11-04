@@ -44,4 +44,4 @@ Step 3. Install Nerd Font
 
 7. Start configuring Starship by navigating to [Starships website](https://starship.rs/guide/) and play around
 8. If you want a quick start to see if you like it or not, you can download a complete starship.toml file from my [gists](https://gist.github.com/4x32GB/6be49ac127b60019e4d617617c74fc84)
-***Fare warning: My prompt is highly customized and has several features I love that you may not!***
+***Fair warning: My prompt is highly customized and has several features I love that you may not!***
