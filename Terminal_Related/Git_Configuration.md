@@ -10,6 +10,8 @@ Using Git with Visual Studio Code can often become bothersome due to features be
 
 [Caching Your Personal Access Token](#caching-your-personal-access-token)
 
+[Sources](#sources)
+
 ## Creating Your Personal Access Token
 
 <img src="https://imgur.com/LITPGcD.png" alt="Personal access token page" height=400 width=400>
@@ -19,6 +21,15 @@ With the deprecation of password authentication, the usage of the PAT or Persona
 Office documentation relating to the creation of the personal access token can be found under the [sources](#sources) section at the bottom of this write-up!
 
 ## Authorizing GitHub
+
+Authorizing Git with your GitHub credentials is very important, but I found that this process doesn't always store the credentials the way we may want. This will accomplish removing the hassle of always needing to enter your username and password, but it will always ask for a personal access token. This isn't such a big deal if you utilize a password manager, or you just don't mind having to do so, but to save time, we'll eventually cache that token.
+
+Step 1. Install the GitHub CLI
+
+```bash
+sudo nala install gh -y
+```
+> **_NOTE:_** I use nala as my package manager, but if you use apt, dnf, or yay you will do whatever is the equivalent. The APT equivalent is exactly as above since nala is just a fork of APT.
 
 ## Caching Your Personal Access Token
 
@@ -37,7 +48,7 @@ Step 2. Make the GitHub credential store look at that file anytime it needs cred
 ```bash
 git config credential.helper --file=~/Documents/.token.txt
 ```
-***You can place the file wherever you want but always make sure the file is hidden***
+> **Sidenote:_** You can place the file wherever you want but always make sure the file is hidden
 
 Step 3. Make a *Git Push* attempt to your repo (You will be asked for your token the first time)
 
