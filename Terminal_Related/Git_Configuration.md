@@ -5,7 +5,9 @@ Using Git with Visual Studio Code can often become bothersome due to features be
 ## Table of Contents
 
 [Creating Your Personal Access Token](#creating-your-personal-access-token)
+
 [Authorizing GitHub](#authorizing-github)
+
 [Caching Your Personal Access Token](#caching-your-personal-access-token)
 
 ## Creating Your Personal Access Token
