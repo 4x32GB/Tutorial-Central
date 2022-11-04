@@ -18,15 +18,6 @@ With the deprecation of password authentication, the usage of the PAT or Persona
 
 Office documentation relating to the creation of the personal access token can be found under the [sources](#sources) section at the bottom of this write-up!
 
-<Details>
-<summary>Official GitHub Tutorial (pwease support me 😚🙏)</summary>
-
-**If you'd rather a more official write-up on how to make your PAT, you can navigate to the official GitHub tutorial @ [Creating a Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)**.
-
-</Details>
-
-
-
 ## Authorizing GitHub
 
 ## Caching Your Personal Access Token
@@ -60,3 +51,5 @@ Step 4. Make another *Git Push* attempt, but this time you will notice that it g
 Git Credential Store Documentation: [https://git-scm.com/docs/git-credential-store](https://git-scm.com/docs/git-credential-store)
 
 Cache GitHub Credentials in Git: [https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git)
+
+Creating a Personal Access Token: [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
