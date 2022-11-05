@@ -66,6 +66,13 @@ Often times your credentials just will not store for whatever reason, whether it
 git config --global credential.helper cache
 ```
 
+A good indication of your credentials being stored is if you check the .gitconfig file using the command below. You will notice that the cache value is set to the 'credential.helper' variable.
+
+```bash
+git config --global -l
+```
+![Imgur](https://imgur.com/ZfTYc6m.png)
+
 ## Sources:
 
 Git Credential Store Documentation: [https://git-scm.com/docs/git-credential-store](https://git-scm.com/docs/git-credential-store)
