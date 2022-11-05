@@ -1,4 +1,4 @@
-<h1 style="color:#FF8C00">Git Configuration</h1>
+# Git Configuration
 
 Using Git with Visual Studio Code can often become bothersome due to features becoming deprecated. I'm going to do my best to cover all the things you can do to make your experience with GitHub, Git, and Visual Studio Code (VS Code) a lot more enjoyable.
 
@@ -29,7 +29,7 @@ Authorizing Git with your GitHub credentials is very important, but I found that
 Step 1. Install the GitHub CLI
 
 ```bash
-sudo nala install gh -y
+sudo [appmanager] install gh -y
 ```
 > **_NOTE:_** I use nala as my package manager, but if you use apt, dnf, or yay you will do whatever is the equivalent. The APT equivalent is exactly as above since nala is just a fork of APT.
 
@@ -73,7 +73,20 @@ git config --global -l
 ```
 ![Global Git Config Terminal Prompt](https://imgur.com/ZfTYc6m.png)
 
-## Tips
+## Extras
+
+Install Git-Extras to Utilize Additional Modules
+
+```bash
+sudo [appmanager] install git-extras
+```
+
+Ignoring That One Pesky File
+
+```bash
+git-ignore --global [filename]
+```
+>**_Global Reasoning:_** I tend to use the --global flag due to all of my projects being a solo process and having everything set on a user basis instead of working directory.
 
 Disable Git Ignored File Messaged
 
@@ -84,7 +97,7 @@ git config advice.addIgnoredFile false
 Generating an SSH Key
 
 ```bash
-ssh-keygen -t ed25519 -C "youremail@provider.com"
+ssh-keygen -t [key-type] -C "youremail@provider.com"
 ```
 
 >**_NOTE:_** By default, ssh keys are stored in the following location > '~/.ssh' if you forget where the key was saved. All key types are stored here no matter if rca, ed25519, DSA, etc..
