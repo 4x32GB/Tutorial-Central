@@ -48,7 +48,7 @@ Step 2. Make the GitHub credential store look at that file anytime it needs cred
 ```bash
 git config --global credential.helper --file=~/Documents/.token.txt
 ```
-> **_Sidenote:_** You can place the file wherever you want but always make sure the file is hidden
+> **_Side Note:_** You can place the file wherever you want but always make sure the file is hidden
 
 Step 3. Make a *Git Push* attempt to your repo (You will be asked for your token the first time)
 
