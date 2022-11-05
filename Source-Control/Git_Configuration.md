@@ -78,10 +78,10 @@ Authorizing Git with your GitHub credentials is very important, but I found that
 Step 1. Install the GitHub CLI
 
 ```bash
-sudo [package manager] install gh -y
+sudo dnf install gh -y
 ```
 
-> **_NOTE:_** I use nala as my package manager, but if you use apt, dnf, or yay you will do whatever is the equivalent. You may see alternative package managers aside from nala/apt, such as dnf, because I tend to flip flop between distributions a lot.
+> **_NOTE:_** I use dnf as my package manager since I am a Fedora user, but the command to install a package is similar across _most_ distros. For example, to install GitHub CLI on Pop!_OS (Debian), you would run the command 'sudo apt install gh'
 
 ## Caching Your Personal Access Token
 
@@ -106,8 +106,6 @@ git config --global credential.helper --file=~/.token
 Step 3. Make a *Git Push* attempt to your repo (You will be asked for your token the first time)
 
 Step 4. Make another *Git Push* attempt, but this time you will notice that it goes through without any prompt! 
-
-**SUCCESS!!**
 
 ## Addressing Issues with Caching the Personal Access Token
 
