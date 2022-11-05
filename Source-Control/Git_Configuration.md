@@ -81,7 +81,7 @@ Step 1. Install the GitHub CLI
 sudo dnf install gh -y
 ```
 
-> **_NOTE:_** I use dnf as my package manager since I am a Fedora user, but the command to install a package is similar across _most_ distros. For example, to install GitHub CLI on Pop!_OS (Debian), you would run the command 'sudo apt install gh'
+> **_NOTE:_** I use dnf as my package manager since I am a Fedora user, but the command to install a package is similar across _most_ distros. For example, to install GitHub CLI on Pop!_OS (Debian), you would run the command 'sudo apt install gh'.
 
 ## Caching Your Personal Access Token
 
