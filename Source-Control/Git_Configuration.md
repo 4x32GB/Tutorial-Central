@@ -52,18 +52,22 @@ Git Configuration Checklist:
     ```git
     git config --global user.email "jakemontgom67@hotmail.com"
     ```
+
 - [x] Required: Set Git Name
     ```git
     git config --global user.name "Jake Montgomery"
     ```
+    
 - [ ] Optional: Change Branch Name
     ```git
     git config --global init.defaultBranch main
     ```
 
-Need Assistance?
+**Need Help?**
 
 There are 3 different ways you can get help with a specific command or just Git in general:
+
+**Option #1**
 
 ```git
 git <verb> --help
@@ -75,6 +79,8 @@ git pull --help
 
 ---
 
+**Option #2**
+
 ```git
 git help <verb>
 ```
@@ -84,6 +90,8 @@ git help pull
 ```
 
 ---
+
+**Option #3**
 
 ```git
 man git <verb>
@@ -110,6 +118,7 @@ Step 1. Install the GitHub CLI
 ```bash
 sudo [package manager] install gh -y
 ```
+
 > **_NOTE:_** I use nala as my package manager, but if you use apt, dnf, or yay you will do whatever is the equivalent. You may see alternative package managers aside from nala/apt, such as dnf, because I tend to flip flop between distributions a lot.
 
 ## Caching Your Personal Access Token
@@ -129,6 +138,7 @@ Step 2. Make the GitHub credential store look at that file anytime it needs cred
 ```git
 git config --global credential.helper --file=~/.token
 ```
+
 > **_Side Note:_** You can place the file wherever you want but always make sure the file is hidden
 
 Step 3. Make a *Git Push* attempt to your repo (You will be asked for your token the first time)
@@ -150,6 +160,7 @@ A good indication of your credentials being stored is if you check the .gitconfi
 ```git
 git config --global -l
 ```
+
 ![Global Git Config Terminal Prompt](https://imgur.com/ZfTYc6m.png)
 
 ## Extras
@@ -165,6 +176,7 @@ Ignoring That One Pesky File
 ```git
 git-ignore --global [filename]
 ```
+
 >**_Global Reasoning:_** I tend to use the --global flag due to all of my projects being a solo process and having everything set on a user basis instead of working directory.
 
 Disable Git Ignored File Messaged
