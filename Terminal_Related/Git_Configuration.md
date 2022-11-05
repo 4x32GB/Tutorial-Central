@@ -29,7 +29,7 @@ Authorizing Git with your GitHub credentials is very important, but I found that
 Step 1. Install the GitHub CLI
 
 ```bash
-sudo [appmanager] install gh -y
+sudo [package manager] install gh -y
 ```
 > **_NOTE:_** I use nala as my package manager, but if you use apt, dnf, or yay you will do whatever is the equivalent. You may see alternative package managers aside from nala/apt, such as dnf, because I tend to flip flop between distributions a lot.
 
@@ -78,7 +78,7 @@ git config --global -l
 Install Git-Extras to Utilize Additional Modules
 
 ```bash
-sudo [appmanager] install git-extras
+sudo [package manager] install git-extras
 ```
 
 Ignoring That One Pesky File
