@@ -1,4 +1,4 @@
-<h1 style="text-align:center;color:#FF8C00"> Bash Cheat Sheet</h1>
+<h1 style="color:#FF8C00">Bash Cheat Sheet</h1>
 
 ## Need Help?
 

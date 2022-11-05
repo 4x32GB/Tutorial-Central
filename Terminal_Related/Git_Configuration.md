@@ -73,6 +73,22 @@ git config --global -l
 ```
 ![Global Git Config Terminal Prompt](https://imgur.com/ZfTYc6m.png)
 
+## Tips
+
+Disable Git Ignored File Messaged
+
+```bash
+git config advice.addIgnoredFile false
+```
+
+Generating an SSH Key
+
+```bash
+ssh-keygen -t ed25519 -C "youremail@provider.com"
+```
+
+>**_NOTE:_** By default, ssh keys are stored in the following location > '~/.ssh' if you forget where the key was saved. All key types are stored here no matter if rca, ed25519, DSA, etc..
+
 ## Sources:
 
 Git Credential Store Documentation: [https://git-scm.com/docs/git-credential-store](https://git-scm.com/docs/git-credential-store)
