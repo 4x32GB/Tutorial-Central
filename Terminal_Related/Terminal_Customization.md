@@ -5,6 +5,8 @@
 ## Table of Contents
 [Installation Instructions](#installation-instructions)
 
+[Custom Starship Configuration](#custom-starship-terminal-toml-file)
+
 ## Installation Instructions
 
 ### Starship
@@ -47,9 +49,8 @@ Step 3. Install Nerd Font
 ***Fair warning: My prompt is highly customized and has several features I love that you may not!***
 
 ### Custom Starship Terminal TOML File
-<details>
-    <summary>Treats underneath</summary>
 
+```bash
     format = """
     [](#FF19B6)\
     $username\
@@ -218,5 +219,4 @@ Step 3. Install Nerd Font
     symbol = " "
     style = "bg:#86BBD8"
     format = '[ $symbol ($version) ]($style)'
-
-</details>
+```

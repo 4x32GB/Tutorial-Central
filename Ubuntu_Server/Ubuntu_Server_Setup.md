@@ -1,15 +1,22 @@
-<h1 style="text-align:center;color:#FF8C00">🍗 Ubuntu Server Setup 🍗</h1>
+<h1 style="text-align:center;color:#FF8C00">Ubuntu Server Setup</h1>
 
-Forward Ports:
+## Table of Contents
 
-    1. Gateway: 192.168.0.1
-    2. Forward Port 22 Internally & Externally
-    3. Application is SSH
-    4. Device IP should be static so the IP never changes
+[Port Forwarding](#port-forwarding)
+[]()
+[]()
+[]()
 
-    192.168.0.1 is the TPLink Portal
+## Port Forwarding
 
-Finding the Default Gateway
+    Step 1. Gateway: 192.168.x.x
+    Step 2. Forward Port 22 Internally & Externally
+    Step 3. Application is SSH
+    Step 4. Device IP should be static so the IP never changes
+
+### Finding the Default Gateway
+
+Find your default gateway may be a bit tricky if you're not to 'network' savvy, but it's actually a lot easier than you would think. With one quick command, we get all of the information we need.
 
 ```bash
 route -n
@@ -20,10 +27,9 @@ Destination     Gateway     Genmask         Flags Metric Ref    Use Iface
 0.0.0.0         192.168.0.1     0.0.0.0         UG    100    0        0 enp5s0
 ```
 
+>**_NOTE:_** Your output will be different than mine
 
-<h2 style="text-align:center;color:#FF8C00">Enable & Configure Firewall</h2>
-
-Change SSH Port - Edit 'Port Number = ' to Whatever Port You Want Opened Above 100
+## Enable & Configure Firewall
 
 ```bash 
 sudo nano .bashrc
@@ -65,7 +71,7 @@ Allow HTTPS Traffic
 
 
 
-<h2 style="text-align:center;color:#FF8C00">Generate & Store SSH Key</h2>
+## Generate & Store SSH Key
 
 Key Generation
 
