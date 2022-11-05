@@ -31,7 +31,7 @@ Step 1. Install the GitHub CLI
 ```bash
 sudo [appmanager] install gh -y
 ```
-> **_NOTE:_** I use nala as my package manager, but if you use apt, dnf, or yay you will do whatever is the equivalent. The APT equivalent is exactly as above since nala is just a fork of APT.
+> **_NOTE:_** I use nala as my package manager, but if you use apt, dnf, or yay you will do whatever is the equivalent. You may see alternative package managers aside from nala/apt, such as dnf, because I tend to flip flop between distributions a lot.
 
 ## Caching Your Personal Access Token
 
