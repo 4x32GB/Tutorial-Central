@@ -71,7 +71,7 @@ A good indication of your credentials being stored is if you check the .gitconfi
 ```bash
 git config --global -l
 ```
-![Imgur](https://imgur.com/ZfTYc6m.png)
+![Global Git Config Terminal Prompt](https://imgur.com/ZfTYc6m.png)
 
 ## Sources:
 

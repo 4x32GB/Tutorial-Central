@@ -5,13 +5,17 @@
 Using the man Command 
 
 ```bash
-man <commandname> ex: man touch
+man <commandname>
 ```
 
 Using the --help Argument
 
 ```bash
 touch --help
+```
+
+```bash
+touch -h
 ```
 
 ## Files & Directories
@@ -34,10 +38,11 @@ Creating a File in the Current Directory
 touch <filename> <directoryname>
 ```
 
-Creating a File in Another Directory (although a bit long of a command I feel it's bulletproof)
+Creating a File in Another Directory
 
 ```bash
-touch <filename> && mv <directoryname>
+touch <path>/<filename>
 ```
+
 
 ## Check Hard-Disk 
