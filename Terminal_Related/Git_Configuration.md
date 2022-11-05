@@ -40,13 +40,13 @@ I'm a big fan of documentation so for assistance I will usually peer into offici
 Step 1. Make a hidden file for your token
 
 ```bash
-touch ~/token.txt
+touch ~/Documents/.token.txt
 ```
 
 Step 2. Make the GitHub credential store look at that file anytime it needs credentials
 
 ```bash
-git config credential.helper --file=~/Documents/.token.txt
+git config --global credential.helper --file=~/Documents/.token.txt
 ```
 > **_Sidenote:_** You can place the file wherever you want but always make sure the file is hidden
 
