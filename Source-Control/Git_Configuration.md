@@ -202,7 +202,7 @@ Alternatively, if you aren't interested in digging through the manual relating t
 git push -h
 ```
 
-Output
+Output:
 
     git pull -h
     usage: git pull [<options>] [<repository> [<refspec>...]]
