@@ -10,6 +10,8 @@ Using Git with Visual Studio Code can often become bothersome due to features be
 
 [Caching Your Personal Access Token](#caching-your-personal-access-token)
 
+[Addressing Issues Caching the Personal Access Token](#addressing-issues-with-caching-the-personal-access-token)
+
 [Sources](#sources)
 
 ## Creating Your Personal Access Token
@@ -53,6 +55,8 @@ git config --global credential.helper --file=~/Documents/.token.txt
 Step 3. Make a *Git Push* attempt to your repo (You will be asked for your token the first time)
 
 Step 4. Make another *Git Push* attempt, but this time you will notice that it goes through without any prompt! 
+
+## Addressing Issues with Caching the Personal Access Token
 
 **SUCCESS!!**
 
