@@ -42,13 +42,13 @@ I'm a big fan of documentation so for assistance I will usually peer into offici
 Step 1. Make a hidden file for your token
 
 ```bash
-touch ~/Documents/.token.txt
+touch ~/.token
 ```
 
 Step 2. Make the GitHub credential store look at that file anytime it needs credentials
 
 ```bash
-git config --global credential.helper --file=~/Documents/.token.txt
+git config --global credential.helper --file=~/.token
 ```
 > **_Side Note:_** You can place the file wherever you want but always make sure the file is hidden
 
@@ -56,12 +56,17 @@ Step 3. Make a *Git Push* attempt to your repo (You will be asked for your token
 
 Step 4. Make another *Git Push* attempt, but this time you will notice that it goes through without any prompt! 
 
-## Addressing Issues with Caching the Personal Access Token
-
 **SUCCESS!!**
 
+## Addressing Issues with Caching the Personal Access Token
 
-### Sources:
+Often times your credentials just will not store for whatever reason, whether it be because a file is not being created or the access to not permitted for Git. By running the command below, your credentials should then be stored after the PAT is asked for.
+
+```bash
+git config --global credential.helper cache
+```
+
+## Sources:
 
 Git Credential Store Documentation: [https://git-scm.com/docs/git-credential-store](https://git-scm.com/docs/git-credential-store)
 
