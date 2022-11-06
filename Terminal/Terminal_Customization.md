@@ -3,7 +3,7 @@
 <details>
     <summary>Table of Contents</summary
 
-[About This Project]()
+[About This Project](#about-this-project)
 
 [Starship Install](#starship-install)
 
@@ -23,7 +23,7 @@
 
 [Oh-My-Posh Custom Themes](#oh-my-posh-custom-themes)
 
-[License]()
+[License](#)
         
 [Acknowledgments]()
 
@@ -526,3 +526,15 @@ eval "$(oh-my-posh init bash --config $(brew --prefix oh-my-posh)/themes/quick-t
 ```
 
 </details>
+
+## License
+
+Distributed under the CC0 1.0 Universal License. See [`LICENSE.md`](#license) for more information.
+
+## Acknowledgements
+
+Scott Hanselman for his [PowerShell Profile](https://gist.github.com/shanselman/25f5550ad186189e0e68916c6d7f44c3).
+
+[Oh-My-Posh](https://ohmyposh.dev) for their wonderful prompt customization.
+
+[Starship](https://starship.rs) for their cross-shell prompt.
