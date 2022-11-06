@@ -1,29 +1,31 @@
-<h1 style="color:#FF8C00">🎃 Terminal Customization</h1>
-
-<figure>
-    <img src="https://i.imgur.com/YRRZIh9.png" alt="Screenshot of customized terminal" height=500>
-    <figcaption style="text-align:center;">Starship w/ Pastel Powerline Preset</figcaption>
-</figure>
+<h1 style="color:#FF8C00">Terminal Customization</h1>
 
 ## Table of Contents
 
-[Introduction](#custom-starship-terminal-toml-file)
+[Starship Install](#starship-install)
 
-[Starship Install (**easy**)](#starship-install)
-
-[Starship Uninstall (**easy**)](#starship-uninstall)
+[Starship Uninstall](#starship-uninstall)
 
 [Custom Starship Configuration](#custom-starship-terminal-toml-file)
 
-[Oh-My-Posh Install (**hard**)](#oh-my-posh-install)
+[Oh-My-Posh Install](#oh-my-posh-install)
 
 > [Homebrew Install](#install-homebrew)
 
-[Oh-My-Posh Uninstall (**hard**)](#oh-my-posh-uninstall)
+[Oh-My-Posh Uninstall](#oh-my-posh-uninstall)
+
+> [Homebrew Uninstall](#uninstall-homebrew)
 
 [Oh-My-Posh Custom Theme Configuration](#oh-my-posh-custom-theme-configuration)
 
 [Oh-My-Posh Custom Themes](#oh-my-posh-custom-themes)
+
+---
+
+<figure>
+    <img src="https://i.imgur.com/YRRZIh9.png" alt="Screenshot of customized terminal" height=600>
+    <figcaption style="text-align:center;">Starship w/ Pastel Powerline Preset</figcaption>
+</figure>
 
 ## Starship Install
 
@@ -54,28 +56,36 @@ eval "$(starship init bash)"
 Step 4. Install Nerd Font
 
 * Navigate to the [Nerd Fonts](https://www.nerdfonts.com/font-downloads) website
+
 * Download your selected font
+
 * Create a directory for fonts in Home
+
     ```Bash
     sudo mkdir ~/.fonts
     ```
 * Unzip the fonts zipped folder (this will unzip into the Downloads folder)
+
     ```Bash
     unzip <filename> 
     ```
 * Copy the contents into the .fonts folder (this will move _every_ file in the Downloads folder so use with caution)
+
     ```Bash
     mv * ~/.fonts
     ```
+
 * Refresh the cache and install all fonts
+
     ```Bash
     fc-cache -vf ~/.fonts
     ```
 
 * Start configuring Starship by navigating to [Starship's website](https://starship.rs/guide/) and play around
+
 * If you want a quick-start to see if you like it or not, you can copy it from the below code-block.
 
-***Fair warning: My prompt is highly customized and has several features I love that you may not!***
+> **_Fair warning:_** My prompt is highly customized and has several features I love that you may not!
 
 ## Starship Uninstall
 
@@ -296,41 +306,59 @@ sudo dnf autoremove
 ---
 
 <figure>
-    <img src="https://i.imgur.com/oCjJvPB.png" alt="oh-my-posh terminal">
+    <img src="https://i.imgur.com/oCjJvPB.png" alt="oh-my-posh terminal" height=600>
     <figcaption style="text-align:center;">Oh-My-Posh w/ Quick-Term Theme</figcaption>
 </figure>
 
 ## Oh-My-Posh Install
 
-Similar to the installation instructions for Starship, I will primarily be covering the process on Linux distributions. If you already have Oh-My-Posh installed on Windows, you can check out my []()
+Similar to the installation instructions for Starship, I will primarily be covering the process on Linux distributions. If you already have Oh-My-Posh installed on Windows, you can check out my [Microsoft PowerShell Profile Gist](https://gist.github.com/4x32GB/d94e1475587d100d336b79aa4187246c). _Credit: Scott Hanselman_
 
+Installing Oh-My-Posh is actually extremely using, albeit, you do need to install another package manager to be able to install it. In the section below, I cover how to install _Homebrew_, but once you finish that step, pop back up here and running the following two commands:
+
+```
+brew install jandedobbeleer/oh-my-posh/oh-my-posh
+```
+
+```bash
+brew update && brew upgrade oh-my-posh
+```
 
 > ### Install Homebrew
-
+> 
+> Homebrew is essentially another package manager, but much like something similar to RPM Fusion. Homebrew allows you to install packages that would not > normally be provided with your distribution or install of MacOS. Installing Homebrew is a fairly straight-forward process, but much like anything with > Linux, things can get complicated fast.
+> 
 > ```bash
 > /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 > ```
-
+> 
 > Don't want to have to actually do anything?
-
+> 
 > ```bash
 > NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/> > install.sh)"
 > ```
-
-
+> 
+> After installing Homebrew, we'll then want to make sure that we add Homebrew to not only our _PATH_ but also to our bash shell profile. Since I am on > Fedora, it would be adding it to ~/.bash_profile
+> 
+> ```bash
+> test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+> test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+> test -r ~/.bash_profile && echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bash_profile
+> echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
+> ```
 ## Oh-My-Posh Uninstall
 
 > ### Uninstall Homebrew
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
-```
-
-Don't want to have to actually do anything?
-
-```bash
-NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
-```
+> 
+> ```bash
+> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+> ```
+> 
+> Don't want to have to actually do anything?
+> 
+> ```bash
+> NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/> > uninstall.sh)"
+> ```
 
 ## Oh-My-Posh Custom Theme Configuration
 
