@@ -1,4 +1,4 @@
-<h1 style="color:#FF8C00">Terminal Customization</h1>
+# Terminal Customization
 
 <details>
     <summary>Table of Contents</summary
@@ -28,12 +28,11 @@
 [Acknowledgments]()
 
 </details>
-
-<figure>
-    <img src="https://i.imgur.com/YRRZIh9.png" alt="Screenshot of customized terminal" height=600>
-    <figcaption style="text-align:center;">Starship w/ Pastel Powerline Preset</figcaption>
-</figure>
-
+        
+## About This Project
+        
+**_Beaut-ifying_** the terminal, no matter which shell you use, is not a new concept, but it has gotten better over the years. This project is not a project per se, but it's a collection of notes formatted in the vision that it's a guide to complete the setup of _your_ terminal. I've always had difficulties figuring out how to write notes for myself, but never had issues teaching other people about said thing. I hope it serves you well and you can feel confident in creating your own, custom, terminal.
+       
 ## Starship Install
 
 Step 1. Install Starship from the terminal
