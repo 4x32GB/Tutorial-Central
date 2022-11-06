@@ -1,6 +1,9 @@
 <h1 style="color:#FF8C00">Terminal Customization</h1>
 
-## Table of Contents
+<details>
+    <summary>Table of Contents</summary
+
+[About This Project]()
 
 [Starship Install](#starship-install)
 
@@ -10,17 +13,21 @@
 
 [Oh-My-Posh Install](#oh-my-posh-install)
 
-> [Homebrew Install](#install-homebrew)
+* [Homebrew Install](#install-homebrew)
 
 [Oh-My-Posh Uninstall](#oh-my-posh-uninstall)
 
-> [Homebrew Uninstall](#uninstall-homebrew)
+* [Homebrew Uninstall](#uninstall-homebrew)
 
 [Oh-My-Posh Custom Theme Configuration](#oh-my-posh-custom-theme-configuration)
 
 [Oh-My-Posh Custom Themes](#oh-my-posh-custom-themes)
 
----
+[License]()
+        
+[Acknowledgments]()
+
+</details>
 
 <figure>
     <img src="https://i.imgur.com/YRRZIh9.png" alt="Screenshot of customized terminal" height=600>
