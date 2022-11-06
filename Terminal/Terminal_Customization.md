@@ -17,7 +17,13 @@
 
 [Oh-My-Posh Install (**hard**)](#oh-my-posh-install)
 
+> [Homebrew Install](#install-homebrew)
+
 [Oh-My-Posh Uninstall (**hard**)](#oh-my-posh-uninstall)
+
+[Oh-My-Posh Custom Theme Configuration](#oh-my-posh-custom-theme-configuration)
+
+[Oh-My-Posh Custom Themes](#oh-my-posh-custom-themes)
 
 ## Starship Install
 
@@ -299,21 +305,22 @@ sudo dnf autoremove
 Similar to the installation instructions for Starship, I will primarily be covering the process on Linux distributions. If you already have Oh-My-Posh installed on Windows, you can check out my []()
 
 
+> ### Install Homebrew
 
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+> ```bash
+> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+> ```
 
-Don't want to have to actually do anything?
+> Don't want to have to actually do anything?
 
-```bash
-NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+> ```bash
+> NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/> > install.sh)"
+> ```
 
 
 ## Oh-My-Posh Uninstall
 
-### Uninstall Homebrew
+> ### Uninstall Homebrew
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
@@ -327,8 +334,19 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 
 ## Oh-My-Posh Custom Theme Configuration
 
-Below is a few themes that I have customized to my liking, so feel free to copy the contents and paste into their respective theme file. Make sure you change the theme that will be initialized. For example, the below code snippet is at the end of my **_.bashrc_** file to initialize the Quick-Term theme.
+Below is a few themes that I have customized to my liking, so feel free to copy the contents and paste into their respective theme file. Make sure you change the theme that will be initialized. For example, the below code snippet is at the end of my **_.bashrc_** file to initialize the Quick-Term theme:
 
+```bash
+eval "$(oh-my-posh init bash --config $(brew --prefix oh-my-posh)/themes/quick-term.omp.json)"
+```
+
+To reload your profile to see changes immediately instead of closing your terminal and re-launching, run the following command:
+
+```bash
+eval "$(oh-my-posh init bash --config $(brew --prefix oh-my-posh)/themes/quick-term.omp.json)"
+```
+
+## Oh-My-Posh Custom Themes
 
 <details>
     <summary>Wholespace</summary>
