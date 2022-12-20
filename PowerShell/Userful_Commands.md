@@ -23,6 +23,21 @@ In PowerShell, we're used to constantly pressing tab after we enter the - after 
   [string] Anr
 ```
 
+## Enter-PSSession
+
+If you're used to remoting onto a server to change a setting or configure Active Directory, there is an easier way. Although you can access AD remotely utilizing the AD module, what Enter-PSSession is useful for is running PowerShell commands on that server specifically, instead of running commands against it. Take note that if you utilize an admin username instead of your normal login, you'll want to utilize the -Credential parameter to specify the credentials to be used to login.
+
+```PowerShell
+  # Without credential parameter
+  Enter-PSSession -ComputerName DJX1230KE
+
+  # Result (Example)
+  # [DJX1230KE]: PS C:\>
+
+  # If you need to specify credentials
+  Enter-PSSession -ComputerName DJX1230KE -Credential <username>
+```
+
 ## Credit
 
 [The Lazy Admin](https://lazyadmin.nl/)
